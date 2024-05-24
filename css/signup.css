@@ -50,10 +50,9 @@ body {
   }
   .form-group input[type="submit"]:hover {
     background-color: #e96412;
-    ;
   }
   th{
     font-weight: normal;
     padding-left: 36px;
-    text-decoration: none;
+    
   }
