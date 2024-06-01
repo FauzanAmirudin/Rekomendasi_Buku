@@ -52,6 +52,8 @@ Pembagian Tupoksi Coding :
 
 Fauzan & Bela : Homepage 
 
+Fauzan : Halaman setiap genre 
+
 Reyma : menu favorit
 
 Aura : profile buku
