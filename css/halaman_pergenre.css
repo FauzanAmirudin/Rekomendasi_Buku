@@ -1,5 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: weight; */
+  font-style: normal;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
@@ -74,10 +77,10 @@ header {
 
 .categories-section {
   margin: 20px 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .categories-header {
@@ -85,17 +88,21 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: 180px;
+  margin-right: 180px;
 }
 
 .categories-header h2 {
   margin: 0;
   font-size: 18px;
-  color: #333;
+  /* color: #333; */
 }
 .categories {
   display: flex;
   gap: 15px;
   overflow-x: auto;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .category {
@@ -191,96 +198,6 @@ section h2 {
   color: #333;
 }
 
-.book-list {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-}
-
-.book {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  text-align: center;
-  width: 120px;
-  margin: 10px;
-}
-
-.book img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.book-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0 5px;
-}
-
-.book-author {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-}
-
-.hot-books {
-  margin-top: 40px;
-}
-
-.hot-books h2 {
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-
-.hot-book-main {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.hot-book-main img {
-  width: 200px;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.hot-book-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px;
-}
-
-.hot-book-author {
-  font-size: 16px;
-  color: #666;
-  margin: 0;
-}
-
-.hot-book-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.book {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  text-align: center;
-  width: 100px; /* Adjust width to better match the design */
-}
-
-.book img {
-  width: 70%;
-  height: auto;
-  border-radius: 5px;
-}
-
 .card {
   max-width: 100%;
   padding-left: 1.5rem;
@@ -314,12 +231,6 @@ section h2 {
 
 .tulisan {
   padding: 1rem;
-}
-
-.book-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0 5px;
 }
 
 .book-author {
@@ -390,8 +301,20 @@ footer {
 }
 
 .recommended {
-  margin-left: 150px;
+  margin-left: 170px;
   margin-right: 150px;
+}
+
+.recommended-1 {
+  margin-left: 30px;
+}
+
+.judul-buku {
+  font-weight: 600;
+}
+
+.deskripsi-singkat {
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
