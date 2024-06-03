@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -13,48 +13,47 @@
             <h1>REKOMENDASI BUKU</h1>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search for title, author, or genre">
+            <form action="/search" method="get"> <input type="text" name="q" placeholder="Search for title, author, or genre" id="search-box">
+            </form>
         </div>
         <div class="header-right">
-            <p>Hey Fauzan, Good Afternoon</p>
-            <div class="notification-icon">🔔</div>
-                <span class="notification-bubble">2</span>
+            <p id="greeting"></p>
+            <div class="notification-container" onclick="goToNotifications()">
+        <div class="notification-icon" onclick="showNotifications()">🔔</div>
+            <span class="notification-bubble" id="notification-count"></span>
         </div>
-    </header>
-    
+        <div id="notifications-container" class="hidden">
+        </div>
+    </header> 
     <main>
         <section class="categories-section">
             <div class="categories-header">
-                <h2>All Categories</h2>
-                <a href="#">See All &gt;</a>
+              <h2>All Categories</h2>
             </div>
             <div class="categories">
-                <div class="category active">
-                    <img src="all-icon.png" alt="All">
-                    <span>All</span>
-                </div>
-                <div class="category">
-                    <img src="fiksi-icon.png" alt="Fiksi">
-                    <span>Fiksi</span>
-                </div>
-                <div class="category">
-                    <img src="humor-icon.png" alt="Humor">
-                    <span>Humor</span>
-                </div>
-                <div class="category">
-                    <img src="pizza-icon.png" alt="Pizza">
-                    <span>Pizza</span>
-                </div>
-                <div class="category">
-                    <img src="pizza-icon.png" alt="Pizza">
-                    <span>Pizza</span>
-                </div>
-                <div class="category">
-                    <img src="pizza-icon.png" alt="Pizza">
-                    <span>Pizza</span>
-                </div>
+              <div class="category active">
+                <span>All</span>
+              </div>
+              <div class="category">
+                <span>Fiksi</span>
+              </div>
+              <div class="category">
+                <span>Non Fiksi</span>
+              </div>
+              <div class="category">
+                <span>Self Improvement</span>
+              </div>
+              <div class="category">
+                <span>Historical</span>
+              </div>
+              <div class="category">
+                <span>Humor</span>
+              </div>
+              <div class="category">
+                <span>Horor</span>
+              </div>
             </div>
-        </section>
+          </section>          
         <section class="recommended">
             <h2>Recommended For You</h2>
             <div class="book-list">
@@ -91,38 +90,38 @@
             </div>
         </section>
         
-        <section class="recommended">
-            <h2>Recommended For You</h2>
+        <section class="popular">
+            <h2>Popular</h2>
             <div class="book-list">
                 <div class="book">
-                    <img src="Tentang Kamu.jpeg" alt="Tentang Kamu">
-                    <p class="book-title">Tentang Kamu</p>
-                    <p class="book-author">Tere Liye</p>
+                    <img src="Laskar Pelangi.jpeg" alt="Laskar Pelangi">
+                    <p class="book-title">Laskar Pelangi</p>
+                    <p class="book-author">Andrea Hirata</p>
                 </div>
                 <div class="book">
-                    <img src="Mariposa.jpeg" alt="Mariposa">
-                    <p class="book-title">Mariposa</p>
-                    <p class="book-author">Luluk HF</p>
+                    <img src="Fokus.jpeg" alt="Fokus">
+                    <p class="book-title">Fokus</p>
+                    <p class="book-author">Daniel Goleman</p>
                 </div>
                 <div class="book">
-                    <img src="Pulang.jpeg" alt="Pulang">
-                    <p class="book-title">Pulang</p>
-                    <p class="book-author">Tere Liye</p>
+                    <img src="The Power Of Habits.jpeg" alt="The Power Of Habits">
+                    <p class="book-title">The Power Of Habits</p>
+                    <p class="book-author">Charles Duhigg</p>
                 </div>
                 <div class="book">
-                    <img src="Bulan.jpeg" alt="Bulan">
-                    <p class="book-title">Bulan</p>
-                    <p class="book-author">Tere Liye</p>
+                    <img src="Kambing Jantan.jpeg" alt="Kambing Jantan">
+                    <p class="book-title">Kambing Jantan : Sebuah Catatan Harian Pelajar Bodoh</p>
+                    <p class="book-author">Raditya Dika</p>
                 </div>
                 <div class="book">
-                    <img src="Pergi.jpeg" alt="Pergi">
-                    <p class="book-title">Pergi</p>
-                    <p class="book-author">Tere Liye</p>
+                    <img src="Sapiens.jpeg" alt="Sapiens">
+                    <p class="book-title">Sapiens : A Brief History of Humankind</p>
+                    <p class="book-author">Yuval Noah Harari</p>
                 </div>
                 <div class="book">
-                    <img src="Komet.jpeg" alt="Komet">
-                    <p class="book-title">Komet</p>
-                    <p class="book-author">Tere Liye</p>
+                    <img src="The Deep.jpeg" alt="The Deep">
+                    <p class="book-title">The Deep</p>
+                    <p class="book-author">Nick Cutter</p>
                 </div>
             </div>
         </section>        
@@ -178,8 +177,10 @@
                 <ul>
                     <li>Fiksi</li>
                     <li>Non - Fiksi</li>
-                    <li>Horor</li>
                     <li>Self Improvement</li>
+                    <li>Historical</li>
+                    <li>Humor</li>
+                    <li>Horor</li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -207,6 +208,48 @@
             </div>
         </div>
     </footer>
+    <script>
+        const greetingElement = document.getElementById('greeting');
     
+        function updateTime() {
+          const date = new Date();
+          let hours = date.getHours();
+    
+          let greetingText;
+          if (hours >= 12 && hours < 18) {
+            greetingText = 'Good Afternoon';
+          } else if (hours >= 5 && hours < 12) {
+            greetingText = 'Good Morning';
+          } else {
+            greetingText = 'Good Night';
+          }
+    
+          greetingElement.textContent = `Hey, ${greetingText}`;
+        }
+        updateTime();
+        setInterval(updateTime, 60000);
+      </script>
+      <script>
+        function goToNotifications() {
+        // Redirect the user to the notifications page URL (replace with your actual URL)
+        window.location.href = "/notifications";
+        }
+      </script>
+      <script>
+        function updateNotificationCount(count) {
+        const notificationBubble = document.getElementById('notification-count');
+        notificationBubble.textContent = count;
+
+        if (count === 0) {
+        notificationBubble.classList.add('hidden');
+        } else {
+        notificationBubble.classList.remove('hidden');
+        }
+
+        const notificationIcon = document.querySelector('.notification-icon');
+        const notificationBubbleWidth = notificationBubble.offsetWidth;
+        notificationBubble.style.left = `${notificationIcon.offsetWidth + 10}px`; // Add spacing between icon and bubble
+        }
+      </script>
 </body>
 </html>
