@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Buku</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>REKOMENDASI BUKU</h1>
+        </div>
+        <div class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Search for title, author, or genre" id="search-box">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-right">
+            <p>Hey Fauzan, <span id="greeting">Good Afternoon</span></p>
+            <div class="notification-container" onclick="goToNotifications()">
+                <div class="notification-icon">🔔</div>
+                <span class="notification-bubble" id="notification-count">2</span>
+            </div>
+        </div>
+        <div id="notifications-container" class="hidden"></div>
+    </header> 
+    <main>
+        <section class="search-results">
+            <h2>Search Results</h2>
+            <div class="book-list" id="results-list">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>RekomendasiBuku</h3>
+                <ul>
+                    <li>Fiksi</li>
+                    <li>Non - Fiksi</li>
+                    <li>Self Improvement</li>
+                    <li>Historical</li>
+                    <li>Humor</li>
+                    <li>Horor</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const greetingElement = document.getElementById('greeting');
+
+        function updateTime() {
+            const date = new Date();
+            let hours = date.getHours();
+
+            let greetingText;
+            if (hours >= 12 && hours < 18) {
+                greetingText = 'Good Afternoon';
+            } else if (hours >= 5 && hours < 12) {
+                greetingText = 'Good Morning';
+            } else {
+                greetingText = 'Good Night';
+            }
+
+            greetingElement.textContent = `Hey, ${greetingText}`;
+        }
+        updateTime();
+        setInterval(updateTime, 60000);
+
+        function goToNotifications() {
+            window.location.href = "/notifications";
+        }
+
+        function updateNotificationCount(count) {
+            const notificationBubble = document.getElementById('notification-count');
+            notificationBubble.textContent = count;
+
+            if (count === 0) {
+                notificationBubble.classList.add('hidden');
+            } else {
+                notificationBubble.classList.remove('hidden');
+            }
+
+            const notificationIcon = document.querySelector('.notification-icon');
+            const notificationBubbleWidth = notificationBubble.offsetWidth;
+            notificationBubble.style.left = `${notificationIcon.offsetWidth + 10}px`;
+        }
+    </script>
+</body>
+</html>
