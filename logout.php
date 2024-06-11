@@ -1,8 +1,9 @@
 <?php
 session_start();
-// Hapus semua data sesi
 session_destroy();
-// Redirect ke halaman login
-header("Location: login.html");
-exit;
 ?>
+
+<script type="text/javascript">
+    alert('selamat, anda berhasil logout');
+    location.href = 'login.php'
+</script>
