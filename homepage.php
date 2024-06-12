@@ -448,28 +448,14 @@ if(!isset($_SESSION['user'])){
                 <h2>All Categories</h2>
             </div>
             <div class="categories">
-                <div class="category active">
-                    <span>All</span>
-                </div>
-                <div class="category">
-                    <span>Fiksi</span>
-                </div>
-                <div class="category">
-                    <span>Non Fiksi</span>
-                </div>
-                <div class="category">
-                    <span>Self Improvement</span>
-                </div>
-                <div class="category">
-                    <span>Historical</span>
-                </div>
-                <div class="category">
-                    <span>Humor</span>
-                </div>
-                <div class="category">
-                    <span>Horor</span>
-                </div>
-            </div>
+                <div class="category" data-category="all">All</div>
+                <div class="category" data-category="fiksi">Fiksi</div>
+                <div class="category" data-category="non-fiksi">Non Fiksi</div>
+                <div class="category" data-category="self-improvement">Self Improvement</div>
+                <div class="category" data-category="historical">Historical</div>
+                <div class="category" data-category="humor">Humor</div>
+                <div class="category" data-category="horor">Horor</div>
+              </div>
         </section>
         <section class="recommended">
             <h2>Recommended For You</h2>
@@ -667,6 +653,22 @@ if(!isset($_SESSION['user'])){
             const notificationBubbleWidth = notificationBubble.offsetWidth;
             notificationBubble.style.left = `${notificationIcon.offsetWidth + 10}px`; // Add spacing between icon and bubble
         }
+    </script>
+     <script>
+     document.addEventListener('click', (event) => {
+        const element = event.target;
+
+  
+        if (element.classList.contains('category')) {
+         const category = element.dataset.category;
+         window.location.href = /category/${category};
+        }
+
+         if (element.classList.contains('book')) {
+         const bookId = element.dataset.bookId;
+         window.location.href = /book/${bookId};
+        }
+        });
     </script>
 </body>
 
