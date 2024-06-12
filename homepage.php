@@ -448,7 +448,7 @@ if(!isset($_SESSION['user'])){
                 <h2>All Categories</h2>
             </div>
             <div class="categories">
-                <div class="category" data-category="all">All</div>
+            <div class="category" data-category="all">All</div>
                 <div class="category" data-category="fiksi">Fiksi</div>
                 <div class="category" data-category="non-fiksi">Non Fiksi</div>
                 <div class="category" data-category="self-improvement">Self Improvement</div>
