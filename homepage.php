@@ -16,7 +16,7 @@ if(!isset($_SESSION['user'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
-       body {
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -285,64 +285,57 @@ section h2 {
   padding: 20px;
 }
 
-.hot-books h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center; /* Center the heading */
-  width: 50%; /* Span the full width */
+.container {
+  margin: 30px 50px;
+  background-color: rgb(240, 217, 217);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.hot-books-wrapper {
-  display: flex;
-  flex-grow: 1; /* Grow to fill available space */
-}
-
-.hot-book-main {
-  flex: 0 0 30%; /* Fixed width for the left section */
-  margin-right: 20px; /* Spacing between sections */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content vertically */
-}
-
-.hot-book-main img {
-  width: 50%; /* Image width matches the section */
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.hot-book-info {
-  text-align: center;
-}
-
-.hot-book-list {
-  flex: 1; /* Grow to fill remaining space */
-  display: flex;
-  flex-wrap: wrap; /* Wrap books onto multiple lines */
-  gap: 20px; /* Spacing between books */
-}
-
-.book {
-  width: calc(33% - 10px); /* Adjust width based on columns and gap */
-  text-align: center;
-}
-
-.book img {
-  width: 50%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.book-title {
+h1 {
+  font-size: 36px;
+  }
+  
+  p {
   font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.book-author {
-  font-size: 14px;
-  color: #666;
-}
+  }
+  
+  .books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Align books to the right */
+  flex: 2; /* Allow books container to take up more space */
+  }
+  
+  .book {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  }
+  
+  .butterfly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 60px;
+  }
+  
+  .left-wing,
+  .right-wing,
+  .body,
+  .antennae .left-antenna,
+  .antennae .right-antenna {
+  position: absolute;
+  }
+  
+  /* New styles for text container */
+  .text-container {
+    flex: 1; /* Allow text container to take up remaining space */
+    padding: 30px;
+  }
 
 footer {
   background-color: #333;
@@ -380,6 +373,7 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
 
 .footer-bottom {
   display: flex;
@@ -452,15 +446,15 @@ footer {
               <h2>All Categories</h2>
             </div>
             <div class="categories">
-                <div class="category" data-category="all">All</div>
-                <div class="category" data-category="fiksi">Fiksi</div>
-                <div class="category" data-category="non-fiksi">Non Fiksi</div>
-                <div class="category" data-category="self-improvement">Self Improvement</div>
-                <div class="category" data-category="historical">Historical</div>
-                <div class="category" data-category="humor">Humor</div>
-                <div class="category" data-category="horor">Horor</div>
-              </div>
-        </section>
+              <div class="category" data-category="all">All</div>
+              <div class="category" data-category="fiksi">Fiksi</div>
+              <div class="category" data-category="non-fiksi">Non Fiksi</div>
+              <div class="category" data-category="self-improvement">Self Improvement</div>
+              <div class="category" data-category="historical">Historical</div>
+              <div class="category" data-category="humor">Humor</div>
+              <div class="category" data-category="horor">Horor</div>
+            </div>
+          </section>
         <section class="recommended">
             <h2>Recommended For You</h2>
             <div class="book-list">
@@ -496,6 +490,7 @@ footer {
                 </div>
             </div>
         </section>
+        
         <section class="popular">
             <h2>Popular</h2>
             <div class="book-list">
@@ -531,47 +526,99 @@ footer {
                 </div>
             </div>
         </section>        
-
-        <section class="hot-books">
-            <h2>Hot Books!</h2>
-            <div class="hot-book-main">
-                <img src="how-to-win-friends.jpg" alt="How to Win Friends & Influence People">
-                <p class="hot-book-title">How to Win Friends & Influence People</p>
-                <p class="hot-book-author">Dale Carnegie</p>
+        <div class="container">
+            <div class="header">
+              <h1>Hot Books!</h1>
+              <p>Buku-buku terbaru dan terpopuler</p>
             </div>
-            <div class="hot-book-list">
-                <div class="book">
-                    <img src="Tentang Kamu.jpeg" alt="Tentang Kamu">
-                    <p class="book-title">Tentang Kamu</p>
-                    <p class="book-author">Tere Liye</p>
+          
+            <div class="books">
+              <div class="book">
+                <div class="butterfly">
+                  <div class="left-wing"></div>
+                  <div class="body"></div>
+                  <div class="right-wing"></div>
+                  <div class="antennae">
+                    <div class="left-antenna"></div>
+                    <div class="right-antenna"></div>
+                  </div>
                 </div>
-                <div class="book">
-                    <img src="Mariposa.jpeg" alt="Mariposa">
-                    <p class="book-title">Mariposa</p>
-                    <p class="book-author">Luluk HF</p>
+                <h2>Mariposa</h2>
+                <p>Luluk HE</p>
+              </div>
+          
+              <div class="book">
+                <div class="butterfly">
+                  <div class="left-wing"></div>
+                  <div class="body"></div>
+                  <div class="right-wing"></div>
+                  <div class="antennae">
+                    <div class="left-antenna"></div>
+                    <div class="right-antenna"></div>
+                  </div>
                 </div>
-                <div class="book">
-                    <img src="Pulang.jpeg" alt="Pulang">
-                    <p class="book-title">Pulang</p>
-                    <p class="book-author">Tere Liye</p>
+                <h2>Mariposa</h2>
+                <p>Luuk HE</p>
+              </div>
+          
+              <div class="book">
+                <div class="butterfly">
+                  <div class="left-wing"></div>
+                  <div class="body"></div>
+                  <div class="right-wing"></div>
+                  <div class="antennae">
+                    <div class="left-antenna"></div>
+                    <div class="right-antenna"></div>
+                  </div>
                 </div>
-                <div class="book">
-                    <img src="Bulan.jpeg" alt="Bulan">
-                    <p class="book-title">Bulan</p>
-                    <p class="book-author">Tere Liye</p>
+                <h2>Mariposa</h2>
+                <p>Lulok HF</p>
+              </div>
+          
+              <div class="book">
+                <div class="butterfly">
+                  <div class="left-wing"></div>
+                  <div class="body"></div>
+                  <div class="right-wing"></div>
+                  <div class="antennae">
+                    <div class="left-antenna"></div>
+                    <div class="right-antenna"></div>
+                  </div>
                 </div>
-                <div class="book">
-                    <img src="Pergi.jpeg" alt="Pergi">
-                    <p class="book-title">Pergi</p>
-                    <p class="book-author">Tere Liye</p>
+                <h2>Mariposa</h2>
+                <p>Luluk HE</p>
+              </div>
+          
+              <div class="book">
+                <div class="butterfly">
+                  <div class="left-wing"></div>
+                  <div class="body"></div>
+                  <div class="right-wing"></div>
+                  <div class="antennae">
+                    <div class="left-antenna"></div>
+                    <div class="right-antenna"></div>
+                  </div>
                 </div>
-                <div class="book">
-                    <img src="Komet.jpeg" alt="Komet">
-                    <p class="book-title">Komet</p>
-                    <p class="book-author">Tere Liye</p>
+                <h2>Mariposa</h2>
+                <p>Luuk HE</p>
+              </div>
+          
+              <div class="book">
+                <div class="butterfly">
+                  <div class="left-wing"></div>
+                  <div class="body"></div>
+                  <div class="right-wing"></div>
+                  <div class="antennae">
+                    <div class="left-antenna"></div>
+                    <div class="right-antenna"></div>
+                  </div>
                 </div>
+                <h2>Mariposa</h2>
+                <p>Lulok HF</p>
+              </div>
             </div>
-        </section>               
+          </div>
+          
     </main>
     
     <footer>
@@ -613,8 +660,6 @@ footer {
           </div>
         </div>
       </footer>
-      
-      
     <script>
         const greetingElement = document.getElementById('greeting');
     
@@ -631,13 +676,15 @@ footer {
             greetingText = 'Good Night';
           }
     
-          greetingElement.textContent = Hey, ${greetingText};
+          greetingElement.textContent = `Hey, ${greetingText}`;
         }
+    
         updateTime();
         setInterval(updateTime, 60000);
       </script>
       <script>
         function goToNotifications() {
+        // Redirect the user to the notifications page URL (replace with your actual URL)
         window.location.href = "/notifications";
         }
       </script>
@@ -654,24 +701,18 @@ footer {
 
         const notificationIcon = document.querySelector('.notification-icon');
         const notificationBubbleWidth = notificationBubble.offsetWidth;
-        notificationBubble.style.left = ${notificationIcon.offsetWidth + 10}px;
+        notificationBubble.style.left = `${notificationIcon.offsetWidth + 10}px`; // Add spacing between icon and bubble
         }
       </script>
       <script>
-     document.addEventListener('click', (event) => {
+      document.addEventListener('click', (event) => {
         const element = event.target;
-
-  
         if (element.classList.contains('category')) {
-         const category = element.dataset.category;
-         window.location.href = /category/${category};
+          const category = element.dataset.category;
+          window.location.href = `/category/${category}`; // Replace with your category URL structure
         }
-
-         if (element.classList.contains('book')) {
-         const bookId = element.dataset.bookId;
-         window.location.href = /book/${bookId};
-        }
-        });
+      });
     </script>
+    
 </body>
 </html>
