@@ -286,31 +286,37 @@ section h2 {
 }
 
 .container {
-  margin: 30px 50px;
+  margin: 50px 50px;
   background-color: rgb(240, 217, 217);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid; /* Gunakan tata letak grid */
+  grid-template-columns: 300px 1fr; /* Definisikan lebar kolom */
 }
 
-h1 {
+.header {
+  text-align: center right;
+  padding: 20px 285px;
+  grid-column: 2; /* Tempatkan header di kolom kiri */
+  grid-row: 1; /* Tempatkan header di baris pertama */
+  }
+  
+  h1 {
   font-size: 36px;
   }
-  
-  p {
-  font-size: 16px;
-  }
-  
+
   .books {
+  grid-column: 2; /* Tempatkan buku di kolom kanan */
+  grid-row: 2; /* Tempatkan buku di baris pertama */
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; /* Align books to the right */
-  flex: 2; /* Allow books container to take up more space */
+  justify-content:right;
   }
   
   .book {
-  width: 200px;
-  margin: 20px;
+  width: 170px;
+  margin: 10px;
   text-align: center;
   }
   
@@ -331,10 +337,10 @@ h1 {
   position: absolute;
   }
   
-  /* New styles for text container */
   .text-container {
-    flex: 1; /* Allow text container to take up remaining space */
-    padding: 30px;
+  padding: 30px;
+  grid-column: 1; /* Tempatkan wadah teks di kolom kiri */
+  grid-row: 2; /* Tempatkan wadah teks di baris kedua */
   }
 
 footer {
@@ -525,11 +531,10 @@ footer {
                     <p class="book-author">Nick Cutter</p>
                 </div>
             </div>
-        </section>        
-        <div class="container">
+        </section>      
+        <div class="container"> 
             <div class="header">
               <h1>Hot Books!</h1>
-              <p>Buku-buku terbaru dan terpopuler</p>
             </div>
           
             <div class="books">
@@ -543,8 +548,9 @@ footer {
                     <div class="right-antenna"></div>
                   </div>
                 </div>
-                <h2>Mariposa</h2>
-                <p>Luluk HE</p>
+                <img src="The Deep.jpeg" alt="The Deep">
+                    <p class="book-title">The Deep</p>
+                    <p class="book-author">Nick Cutter</p>
               </div>
           
               <div class="book">
@@ -585,8 +591,9 @@ footer {
                     <div class="right-antenna"></div>
                   </div>
                 </div>
-                <h2>Mariposa</h2>
-                <p>Luluk HE</p>
+                <img src="The Deep.jpeg" alt="The Deep">
+                <p class="book-title">The Deep</p>
+                <p class="book-author">Nick Cutter</p>
               </div>
           
               <div class="book">
