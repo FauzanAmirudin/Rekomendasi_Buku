@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/html1.css">
+    <title>Book Profile</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-8">col-sm-8</div>
+          <div class="col-sm-4">col-sm-4</div>
+        </div>
+
+<script>
+
+
+    function addComment(event) {
+        event.preventDefault();
+        const commentInput = document.getElementById('input');
+        const commentSection = document.getElementById('comment-section');
+        const newComment = document.createElement('p');
+        newComment.textContent = commentInput.value;
+        commentSection.appendChild(newComment);
+        commentInput.value = '';
+    }
+</script>
+
+</body>
+</html>

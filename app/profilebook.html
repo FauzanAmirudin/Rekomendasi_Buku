@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profilebook.css">
+    <title>Book Profile</title>
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <div class="image">
+            <img src="../img/KambingJantan.jpeg" alt="Book Cover">
+        </div>
+        <h3>Kambing Jantan: Sebuah Catatan Harian Pelajar Bodoh</h3>
+        <p>Sebuah Catatan Pelajar Bodoh Esok paginya, ternyata jerawat gw makin banyak!!!! Tidakkkk? Rupanya ada yang infeksi gitu soalnya si tukang salon salah ngasih obat? Nyokap gw langsung panik, mulai saat itu dia tiap malem bersiin muka gw pake lation ama toner pembersih. Ajaibnya setiap kali dibersiin ama dia, paginya pasti jerawat gw berkurang banyak sekali!!!! Selidik punya selidik, gw bertanya kepada sang mama? Gw: Ma, kok jerawatnya ilangnya kok cepet banget sih? Lationnya bagus ya? Nyokap: Wahhh? Rahasianya bukan dikrim ato tonernya, kung? Gw: Trus? Nyokap: Rahasianya tuh pada kain yang mama pake buat bersiin muka kamu! Pas gw ngeliatin tuh kain ternyata bentuknya segi tiga, ternyata ada karetnya di bagian atas? Ternyata? Itu adalah kolor bokap gw!!!!!!! TIDAAAAAKKK? Jadi selama ini nyokap gw menjamah dan mengusap muka gw pake kolornya bokap? Huhuhuu? Nasip? Tapi manjur lho! Pesan moral: ternyata selain buat topi, kolor mempunyai kegunaan lain yang menakjubkan</p>
+
+    </div>
+
+    <div class="recommendations">
+        <div class="genre">
+            <button>Motivasi</button>
+            <button>Psikologi</button>
+            <button>Humor</button>
+            <button>></button>
+        </div>
+        <div class="gen-img">
+            <img src="../img/Financial Freedom.png" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    <p class="desc">
+                        
+                    </p>
+                
+            <a href="#">Financial Freedom</a>
+            
+        </div>
+        <div class="gen-img">
+            <img src="../img/richdadpoordad.jpg" >
+            <a href="#">Book 2</a>
+        </div>
+        <div class="gen-img">
+            <img src="../img/sikologi mani.png" >
+            <a href="#">Book 3</a>
+        </div>
+        <div class="gen-img">
+            <img src="../img/atomic habits.png" >
+            <a href="#">Book 4</a>
+        </div>
+    </div>
+</div>
+
+<div class="container1">
+    <div class="comments">
+        <div class="stars">
+            <input type="radio" name="star" id="star1"><label for="star1">&#9733;</label>
+            <input type="radio" name="star" id="star2"><label for="star2">&#9733;</label>
+            <input type="radio" name="star" id="star3"><label for="star3">&#9733;</label>
+            <input type="radio" name="star" id="star4"><label for="star4">&#9733;</label>
+            <input type="radio" name="star" id="star5"><label for="star5">&#9733;</label>
+        </div>
+        <form onsubmit="addComment(event)">
+            <input id="input"class="input" placeholder="Tulis komentar di sini...">
+            
+            <button type="submit" class="submit">Kirim</button>
+        </form>
+        <div class="rating">
+            <button onclick="showLatestRating()">Terbaru</button>
+            <button onclick="showHighestRating()">Tertinggi</button>
+            <button onclick="showLowestRating()">Terendah</button>
+        </div>
+        <div id="comment-section"></div>
+    </div>
+</div>
+
+<script>
+
+
+    function addComment(event) {
+        event.preventDefault();
+        const commentInput = document.getElementById('input');
+        const commentSection = document.getElementById('comment-section');
+        const newComment = document.createElement('p');
+        newComment.textContent = commentInput.value;
+        commentSection.appendChild(newComment);
+        commentInput.value = '';
+    }
+</script>
+
+</body>
+</html>
