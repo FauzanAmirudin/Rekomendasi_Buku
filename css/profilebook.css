@@ -1,0 +1,140 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+    height: 535px;
+}
+.container1{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.profile, .comments, .recommendations {
+    padding: 20px;
+}
+.profile {
+    flex: 11;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.profile img {
+    width: 1200px;
+    height: 300px;
+    display: block;
+    filter: blur(5px);
+    margin-bottom: 20px;
+}
+p{
+    text-align: justify;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 1200px;
+}
+
+.rating, .comments, .recommendations {
+    margin-top: 20px;
+}
+.rating button, .genre button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F58D1D;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.rating button:hover, 
+.genre button:hover {
+    background-color: #ce6d05;
+}
+.stars input {
+    display: none;
+}
+.stars label {
+    font-size: 27px;
+    color: rgb(173, 173, 173);
+    cursor: pointer;
+    
+}
+
+.stars input:checked ~ label {
+    background-position: left;
+    color: gold;
+}
+ .comment-form {
+    display: flex;
+    
+}
+.input {
+    font-family: Montserrat;
+    width: 943px;
+    margin-right: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+ }
+.submit{
+    font-family: Montserrat;
+    padding: 10px 20px;
+    background-color: rgba(192, 179, 179, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.recommendations {
+    flex: 1;
+    display: block;
+    grid-template-columns: 20%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.recommendations img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.genre {
+    margin-bottom: 20px;
+}
+.gen-img{
+    display: flex;
+    box-shadow: 5px 5px 5px #96969A;
+    width: 120px;
+    height: 200px;
+    background-color: rgba(77, 77, 77, 0);
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 14px;
+    padding-right: 300px;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+}
+a{
+    text-decoration: none;
+    font-weight:700;
+    width: 300px;
+    background-color: #ce6d0500;
+    padding-right: 100px;
+    color: black;
+    padding-left: 2px;
+    
+}
+.desc{
+    text-align: right;
+    width: 300px;
+    border: none;
+    background-color: aqua;
+    
+}
