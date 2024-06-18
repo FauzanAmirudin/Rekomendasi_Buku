@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profilebook.css">
+    <title>Book Profile</title>
+    
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar">
+        <div class="search-bar">
+            <input class="search-box" type="text" placeholder="&nbsp;&nbsp;&nbsp;Telusuri cerita, profil, atau daftar...">
+
+        </div>
+    </nav>
+    <div class="profile">
+        <div class="image"></div>
+
+        <h3>&nbsp;&nbsp;Kambing Jantan: Sebuah Catatan Harian Pelajar Bodoh</h3>
+        <p>Sebuah Catatan Pelajar Bodoh Esok paginya, ternyata jerawat gw makin banyak!!!! Tidakkkk? Rupanya ada yang infeksi gitu soalnya si tukang salon salah ngasih obat? Nyokap gw langsung panik, mulai saat itu dia tiap malem bersiin muka gw pake lation ama toner pembersih. Ajaibnya setiap kali dibersiin ama dia, paginya pasti jerawat gw berkurang banyak sekali!!!! Selidik punya selidik, gw bertanya kepada sang mama? Gw: Ma, kok jerawatnya ilangnya kok cepet banget sih? Lationnya bagus ya? Nyokap: Wahhh? Rahasianya bukan dikrim ato tonernya, kung? Gw: Trus? Nyokap: Rahasianya tuh pada kain yang mama pake buat bersiin muka kamu! Pas gw ngeliatin tuh kain ternyata bentuknya segi tiga, ternyata ada karetnya di bagian atas? Ternyata? Itu adalah kolor bokap gw!!!!!!! TIDAAAAAKKK? Jadi selama ini nyokap gw menjamah dan mengusap muka gw pake kolornya bokap? Huhuhuu? Nasip? Tapi manjur lho! Pesan moral: ternyata selain buat topi, kolor mempunyai kegunaan lain yang menakjubkan</p>
+    <div class="container1">
+        <div class="comments">
+            <div class="stars">
+                <input type="radio" name="star" id="star1"><label for="star1">&#9733;</label>
+                <input type="radio" name="star" id="star2"><label for="star2">&#9733;</label>
+                <input type="radio" name="star" id="star3"><label for="star3">&#9733;</label>
+                <input type="radio" name="star" id="star4"><label for="star4">&#9733;</label>
+                <input type="radio" name="star" id="star5"><label for="star5">&#9733;</label>
+            </div>
+            <form onsubmit="addComment(event)">
+                <input id="input"class="input" placeholder="Tulis komentar di sini...">
+            </form>
+            <div class="rating">
+                <button onclick="showLatestRating()">Terbaru</button>
+                <button onclick="showHighestRating()">Tertinggi</button>
+                <button onclick="showLowestRating()">Terendah</button>
+            </div>
+            <div id="comment-section"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="recommendations">
+        <div class="genre">
+            <a href="#"><button>Motivasi</button></a>
+            <a href="#"><button>Psikologi</button></a>
+            <a href="#"><button>Humor</button> </a>
+            <a href="#"><button>></button> </a>
+        </div>
+        <a href="#"class="gen-img">
+            <img class="genlist foto " src="../img/Financial Freedom.png" >
+            <div class="genslist desc">
+                "Financial Freedom" adalah sebuah buku yang ditulis oleh Morgan Housel, yang membahas konsep-konsep keuangan pribadi dan strategi untuk mencapai kebebasan finansial
+            </div>
+            <div class="genlist title">
+                Financial Freedom
+            </div>
+            <div class="genlist author">
+                Morgan Housel
+            </div>
+        </a>
+        
+        <a href="#"class="gen-img">
+            <img class="genlist foto " src="../img/Financial Freedom.png" >
+            <div class="genslist desc">
+                "Financial Freedom" adalah sebuah buku yang ditulis oleh Morgan Housel, yang membahas konsep-konsep keuangan pribadi dan strategi untuk mencapai kebebasan finansial
+            </div>
+            <div class="genlist title">
+                Financial Freedom
+            </div>
+            <div class="genlist author">
+                Morgan Housel
+            </div>
+        </a>
+        <a href="#"class="gen-img">
+            <img class="genlist foto " src="../img/Financial Freedom.png" >
+            <div class="genslist desc">
+                "Financial Freedom" adalah sebuah buku yang ditulis oleh Morgan Housel, yang membahas konsep-konsep keuangan pribadi dan strategi untuk mencapai kebebasan finansial
+            </div>
+            <div class="genlist title">
+                Financial Freedom
+            </div>
+            <div class="genlist author">
+                Morgan Housel
+            </div>
+        </a>
+        <a href="#"class="gen-img">
+            <img class="genlist foto " src="../img/Financial Freedom.png" >
+            <div class="genslist desc">
+                "Financial Freedom" adalah sebuah buku yang ditulis oleh Morgan Housel, yang membahas konsep-konsep keuangan pribadi dan strategi untuk mencapai kebebasan finansial
+            </div>
+            <div class="genlist title">
+                Financial Freedom
+            </div>
+            <div class="genlist author">
+                Morgan Housel
+            </div>
+        </a>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function addComment(event) {
+        event.preventDefault();
+        const commentInput = document.getElementById('input');
+        const commentSection = document.getElementById('comment-section');
+        const newComment = document.createElement('div');
+        newComment.textContent = commentInput.value;
+        commentSection.appendChild(newComment);
+        commentInput.value = '';
+    }
+</script>
+
+</body>
+</html>

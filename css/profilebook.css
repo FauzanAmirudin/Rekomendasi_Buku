@@ -1,0 +1,201 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+    height: 535px;
+}
+.container1{
+    padding-right: 70px;
+}
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    padding: 30px 0;
+}
+
+.search-box {
+    width: 1200px;
+    height: 39px;
+    font-family: Montserrat;
+    border: none;
+    margin-left: 20px;
+    border-radius:25px;
+    filter: drop-shadow(1px 8px 10px rgba(0, 0, 0, 0.25));
+    font-size: 16px;
+}
+.search-button{
+    font-family: Montserrat;
+    background-color: rgba(192, 179, 179, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-left: 1px solid rgba(128, 128, 128, 0.25);
+    font-size: 16px;
+    filter: drop-shadow(4px 4px 10px rgba(128, 128, 128, 0.25));
+    cursor: pointer;
+}
+
+.profile, .comments, .recommendations {
+    padding: 20px;
+}
+.profile {
+    flex: 11;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.image {
+    background-image: url(../img/kambingjantanbg.png);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 300px;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    filter: drop-shadow(10px 10px 10px rgba(128, 128, 128, 0.534));
+}
+
+h3{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 1200px;
+}
+p{
+    text-align: justify;
+    width: 1200px;
+}
+
+.rating, .comments, .recommendations {
+    margin-top: 20px;
+}
+.rating button, .genre button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F58D1D;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.rating button:hover, 
+.genre button:hover {
+    background-color: #ce6d05;
+}
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    padding: 10px 0;
+    
+}
+.stars input {
+    display: none;
+}
+.stars label {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+    -webkit-text-stroke: 2px #A0A5BA;
+
+
+}
+.stars input:checked ~ label {
+    color: goldenrod;
+    -webkit-text-stroke: 1px goldenrod;
+}
+
+
+ .comment-form {
+    display: flex;
+    
+}
+
+.input {
+    font-family: Montserrat;
+    width: 1000px;
+    height: 39px;
+    margin-right: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+ }
+.submit{
+    font-family: Montserrat;
+    padding: 10px 20px;
+    background-color: rgba(192, 179, 179, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.recommendations {
+    border: none;
+    border-left: 1px solid #ccc;
+}
+
+.genre {
+    margin-bottom: 20px;
+}
+.gen-img{
+    display: grid;
+    box-shadow: 5px 5px 5px #96969A;
+    width: 360px;
+    height: 200px;
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 14px;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+    
+}
+a{
+
+    text-decoration: none;
+    font-weight:700;
+    background-color: #ce6d0500;
+    color: black;
+    padding-left: 2px;
+    
+    
+}
+.foto{
+    grid-column: 1 ;
+    grid-row: 1;
+    width: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: rgba(127, 255, 212, 0);  
+}
+.title{
+    padding-left: 10px;
+    background-color: #ffffff;
+    grid-column: 1 /19;
+    grid-row: 2;
+    
+}
+.author{
+    padding-left: 10px;
+    font-weight:500;
+    background-color: #ffffff;
+    grid-column: 1 /19;
+    
+}
+.desc{
+    text-align: justify;
+    font-weight:500;
+    background-color: rgba(0, 255, 255, 0);
+    grid-column: 2/span 18;
+    grid-row: 1/span 19; 
+    padding-right: 6px;
+}
