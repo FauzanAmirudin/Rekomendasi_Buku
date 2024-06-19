@@ -72,9 +72,6 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
 <!-- navbar -->
     <div class="navbar flex justify-between bg-base-100 fixed top-0 left-0 w-full z-50 shadow-lg px-10">
         <div class="w-10/12 ">
-            <!-- <a class="flex items-center " href="index.php">
-                <img src="img/logo_matafilm.png" alt="Logo" class="h-16">
-            </a> -->
             <div class="flex-none  ">
                 <ul class="menu menu-horizontal px-1">
                     <li>
@@ -209,8 +206,8 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                             </div>
                                         </div>
                                     </div>
-                                        <figure class="border w-64 h-80 overflow-hidden">
-                                            <img src="img/<?php echo $buku['gambar']; ?>" alt="buku" />
+                                        <figure class="border w-64 h-80 overflow-hidden rounded-lg">
+                                            <img src="img/<?php echo $buku['gambar']; ?>" alt="buku" class="w-44"/>
                                         </figure>
                                         <div class="card-body -mt-5 px-0 py-5">
                                             <h2 class="card-title"><?php echo $buku["judul"]; ?></h2>
@@ -308,11 +305,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                 <div>
                                     <div class="w-full flex text-sm">
                                         <div class="w-6/12 flex mr-1 items-center  ">
-                                            <!-- <div class="flex p-2">
-                                                <img src="img/star.png" alt="star" class=" h-5 mx-2">
-                                                <div class="font-bold text-lg"><?php echo $row['rating']?></div>
-                                                <div class="text-sm pt-2">/10</div>
-                                            </div> -->
+                                            
                                         </div>
                                         <div class="w-6/12 flex flex-col items-center">
                                             <div class="flex p-2">
@@ -435,11 +428,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                 <div>
                                     <div class="w-full flex text-sm">
                                         <div class="w-6/12 flex mr-1 items-center  ">
-                                            <!-- <div class="flex p-2">
-                                                <img src="img/star.png" alt="star" class=" h-5 mx-2">
-                                                <div class="font-bold text-lg"><?php echo $row['rating']?></div>
-                                                <div class="text-sm pt-2">/10</div>
-                                            </div> -->
+                                            
                                         </div>
                                         <div class="w-6/12 flex flex-col items-center">
                                             <div class="flex p-2">
@@ -458,8 +447,8 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                         </div>
                                     </div>
                                 </div>
-                                <figure class="border w-64 h-80 overflow-hidden">
-                                    <img src="img/<?php echo $row['gambar']; ?>" alt="buku" class="w-full h-full object-contain"/>
+                                <figure class="border w-64 h-80 overflow-hidden rounded-lg">
+                                    <img src="img/<?php echo $row['gambar']; ?>" alt="buku" class="w-44"/>
                                 </figure>
 
                                 <div class="card-body -mt-5 px-0 py-5">
@@ -544,7 +533,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
 </body>
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
   <aside>
-    <p>Copyright © 2024 - All right reserved by baron fc</p>
+    <p>Copyright © 2024 - All right reserved by Kelompok 2</p>
   </aside>
 </footer>
 </html>
