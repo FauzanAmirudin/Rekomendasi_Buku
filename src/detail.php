@@ -54,9 +54,6 @@ $avg_rating_result = mysqli_query($conn, "SELECT AVG(user_rating) as avg_rating 
 $avg_rating_row = mysqli_fetch_assoc($avg_rating_result);
 $avg_rating = round($avg_rating_row['avg_rating'], 2); 
 
-
-
-
 //memecah nama pemeran
 $penerbit = explode(',', $row['penerbit']);
 $halaman = explode(',', $row['halaman']);
@@ -171,16 +168,6 @@ $jumlah_readlist_formatted = formatShortNumber($jumlah_readlist);
 
             <div class="w-4/12 flex">
 
-                <!--rating imdb-->
-                <!-- <div class="w-6/12 flex flex-col items-center  "> -->
-                    <!-- <div class="text-sm">RATING IMDb</div>
-                    <div class="flex p-2">
-                        <img src="img/star.png" alt="star" class="w-5 h-5 mx-2">
-                        <div class="font-bold text-lg"><?php echo $row["rating"]?></div>
-                        <div class="text-sm pt-2">/10</div>
-                    </div> -->
-                <!-- </div> -->
-
                 <!--rating user-->
                 <div class="w-6/12 flex flex-col items-center  "> 
                     <div class="text-sm">RATING RekomendasiBuku</div> 
@@ -225,7 +212,7 @@ $jumlah_readlist_formatted = formatShortNumber($jumlah_readlist);
 
                 <div class="flex flex-col mr-40">
 
-                    <!--direktur-->
+                    <!--penulis-->
                     <div class="ml-2  mt-3 border-b-neutral-500 border-y py-2 flex">
                         <div class="w-2/12">Penulis</div>
                         <div class="flex">
@@ -265,7 +252,6 @@ $jumlah_readlist_formatted = formatShortNumber($jumlah_readlist);
                         </div>
                     </div>
 
-                    <!--pemeran-->
                     <div class="ml-2 mt-3 border-b-neutral-500 border-b pb-2 flex">
                         <div class="w-2/12">Penerbit</div>
                         <div class="flex">
@@ -398,7 +384,7 @@ $jumlah_readlist_formatted = formatShortNumber($jumlah_readlist);
 
                 <!--Memberi rating dan komentar-->
                 <div class="mx-20">
-                    <div class=" font-bold text-white text-xl">Rating dan Ulasan untuk Perbukuan Indonesia</div>
+                    <div class=" font-bold text-white text-xl">Rating dan Ulasan </div>
                     <form onsubmit="submitRating(event)" class=" p-2 px-5 rounded" action="tambah_komentar.php" method="post">
                         <input type="hidden" name="buku_id" value="<?php echo $buku_id; ?>">
                         <div class="rating" required>
@@ -414,9 +400,9 @@ $jumlah_readlist_formatted = formatShortNumber($jumlah_readlist);
                             <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 mr-2" value="10"
                                 checked />
                         </div>
-                        <div class="bg-gray-400 p-4 rounded mb-4 flex">
-                            <textarea id="comment" placeholder="Tulis Komentar" name="isi_komentar" rows="4" class="bg-gray-300 w-full p-2  rounded"></textarea>
-                            <button type="submit" class="hover:bg-gray-500 mt-4 px-4 py-2 text-white rounded" name="submit">
+                        <div class="bg-gray-400 p-4 rounded mb-4 flex mt-5">
+                            <textarea id="comment" placeholder="Tulis Komentar" name="isi_komentar" rows="4" class=" w-full p-2 rounded text-white"></textarea>
+                            <button type="submit" class="hover:bg-gray-500 mt-4 px-4 py-2 text-black rounded" name="submit">
                                 <img src="img/mail.png" alt="">
                             </button>
                         </div>
@@ -431,7 +417,7 @@ $jumlah_readlist_formatted = formatShortNumber($jumlah_readlist);
 </body>
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
   <aside>
-    <p>Copyright © 2024 - All right reserved by baron fc</p>
+    <p>Copyright © 2024 - All right reserved by Kelompok 2</p>
   </aside>
 </footer>
 </html>

@@ -3,7 +3,7 @@ require 'function.php';
 
 //koneksi
 $conn = connectDatabase();
-$result10teratas = mysqli_query($conn, "SELECT * FROM buku ORDER BY penonton DESC LIMIT 10");
+$result10teratas = mysqli_query($conn, "SELECT * FROM buku ORDER BY pembaca DESC LIMIT 10");
 $result = mysqli_query($conn, "SELECT * FROM buku");
 $genres = mysqli_query($conn, "SELECT * FROM genres");
 $resultfavorit = mysqli_query($conn, "SELECT * FROM buku ORDER BY favorit DESC");
@@ -63,7 +63,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="img/logo2.png" type="image/png">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 
@@ -155,13 +155,10 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
         <div class="my-auto h-screen"></div>
     </div>
 </div>
-
-
-
         <!-- Hero Banner ends -->
 
 
-        <!-- list tontonan start -->
+        <!-- list Bacaan start -->
         <div class=" h-[5rem]" id="bmark" ></div>
     <div class="">
         <div class="flex flex-col px-10 ">
@@ -170,7 +167,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
             </div>
         </div>
 
-        <div class="px-10">Dari List Bacaan Anda</div>
+        <div class="px-10">Dari list bacaan anda</div>
 
         <?php if ($username): ?>
             <?php if (count($readlist)): ?>
@@ -229,7 +226,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                         <img src="img/plussign.png" alt="">
                                                     </div>
                                                     <div class="w-full flex-col">
-                                                        <div class="font-bold text-sm mx-auto">Tambahkan ke List Tontonan</div>
+                                                        <div class="font-bold text-sm mx-auto">Tambahkan ke List Bacaan</div>
                                                     </div>
                                                 </button>
                                             <?php endif; ?>
@@ -285,7 +282,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
             </a>
         <?php endif;?>
     </div>
-        <!-- list tontonan ends -->
+        <!-- list Bacaan ends -->
 
 
         <!-- top 10 start -->
@@ -413,7 +410,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
         <!-- buku favorit -->
     <div class="">
         <div class="flex flex-col px-10">
-            <div class="w-6/12 text-2xl border-l-4 border-yellow-500 px-3">Buku Favorite pembaca</div>
+            <div class="w-6/12 text-2xl border-l-4 border-yellow-500 px-3">Buku Favorite Pembaca</div>
             <div class="text-lg text-gray-500">Buku dengan favorit terbanyak</div>
         </div>
 
@@ -474,7 +471,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                     <img src="img/plussign.png" alt="">
                                                 </div>
                                                 <div class="w-full flex-col">
-                                                    <div class="font-bold text-sm mx-auto">Tambahkan ke List Tontonan</div>
+                                                    <div class="font-bold text-sm mx-auto">Tambahkan ke List Bacaan</div>
                                                 </div>
                                             </button>
                                         <?php endif; ?>
@@ -485,7 +482,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                 <img src="img/plussign.png" alt="">
                                             </div>
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Tambahkan ke List Tontonan</div>
+                                                <div class="font-bold text-sm mx-auto">Tambahkan ke List Bacaan</div>
                                             </div>
                                         </a>
                                 <?php endif; ?>

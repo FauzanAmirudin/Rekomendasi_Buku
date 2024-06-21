@@ -40,7 +40,6 @@ if($username){
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="yeah.js"></script>
 
     <title>About Page</title>
 </head>
@@ -51,7 +50,6 @@ if($username){
         <div class="w-10/12 ">
             <a class="flex items-center " href="index.php">
                 <p>Home</p>
-                <!-- <img src="img/logo_matafilm.png" alt="Logo" class="h-16"> -->
             </a>
             <div class="flex-none  ">
                 <ul class="menu menu-horizontal px-1">
@@ -61,7 +59,6 @@ if($username){
                                 Menu
                             </summary>
                             <ul class="p-2 bg-base-100 rounded-t-none ">
-                                <!-- <li><a>Donation</a></li> -->
                                 <li><a href="about.php">About Us</a></li>
                             </ul>
                         </details>
@@ -110,67 +107,25 @@ if($username){
     </div>
     <!-- navbar ends -->
 
-        <div class="w-10/12 mx-auto py-32 font-montserrat">
-            <div class="text-3xl font-bold mb-5">Tentang MataFilm</div>
+        <div class="w-10/12 mx-auto py-32 font-montserrat mb-52">
+            <div class="text-3xl font-bold mb-5">Tentang Kami Kelompok 2</div>
             <div class="text-justify text-lg">
-            MataFilm adalah platform daring yang didedikasikan untuk mengulas dan memberikan rating pada film-film Indonesia. MataFilm memungkinkan pengguna untuk menilai dan memberikan ulasan jujur tentang film-film lokal. Dengan fokus utama untuk memajukan perfilman Indonesia, MataFilm menyediakan rekomendasi film-film Indonesia terbaik berdasarkan penilaian dan ulasan dari komunitas pengguna.
-
-            </div>
-            <div class="text-xl font-bold mb-2 mt-10">Visi</div>
-            <div class="text-justify text-lg">
-            Menjadi platform terdepan yang menghubungkan pembaca dengan film-film Indonesia berkualitas, serta mendorong pertumbuhan dan apresiasi terhadap industri perfilman Indonesia.
-
-            </div>
-            <div class="text-xl font-bold mb-2 mt-10 ">Misi</div>
-            <div class="ml-10">
-            <div class="text-justify text-lg mb-1">
-            1. ⁠Meningkatkan Kesadaran dan Apresiasi: Memperkenalkan dan mempromosikan film-film Indonesia kepada audiens yang lebih luas, baik di dalam maupun luar negeri, melalui ulasan dan rating yang jujur dan informatif.
-
-            </div>
-            <div class="text-justify text-lg mb-1">
-            2. ⁠Menyediakan Rekomendasi Berkualitas: Memberikan rekomendasi film-film Indonesia terbaik yang didasarkan pada penilaian dan ulasan dari komunitas pengguna, memastikan pembaca menemukan film yang sesuai dengan selera dan preferensi mereka.
-
-                dan terlibat aktif dalam masyarakat.
-            </div>
-            <div class="text-justify text-lg mb-1">
-            3.⁠ ⁠Mendukung Kreator Film Lokal: Menciptakan ruang di mana kreator film Indonesia dapat menerima feedback konstruktif dari pembaca, sehingga dapat meningkatkan kualitas karya mereka di masa depan.
-            </div>
-            </div>
-            <div class="mt-10">
-                <div class="text-xl font-bold mb-2 mt-10 w-fit mx-auto">Pendiri</div>
-                <div class="w-6/12 mx-auto flex mt-5">
-                    <div class="w-4/12">
-                        <div class="w-11/12">
-                            <img src="img/asti.jpeg" alt="Asti Syafitri" class="h-32 max-w-30 mx-auto rounded-lg" />
-                            <div class="mx-auto w-fit">Asti Syafitri</div>
-                        </div>
-                    </div>
-                    <div class="w-4/12">
-                        <div class="w-11/12 ">
-                            <img src="img/vino.jpeg" alt="Alvino Idma" class="h-32 w-32 object-cover mx-auto rounded-lg" />
-                            <div class="mx-auto w-fit">Alvino Idma</div>
-                        </div>
-                    </div>
-                    <div class="w-4/12">
-                        <div class="w-11/12">
-                            <img src="img/eufra.jpeg" alt="Brigita Mery" class="h-32 w-32 object-cover mx-auto rounded-lg" />
-                            <div class="mx-auto w-fit">Brigita Mery</div>
-                        </div>
-                    </div>
-                    <div class="w-4/12">
-                        <div class="w-11/12">
-                            <img src="img/baron.jpeg" alt="Akbar Fauzan" class="h-32 w-32 object-cover mx-auto rounded-lg" />
-                            <div class="mx-auto w-fit">Akbar Fauzan</div>
-                        </div>
-                    </div>
-                </div>
+            <p>Anggota Kelompok :</p> 
+            <p>Fauzan Amirudin Basith(2213025041)</p>
+            <p>Reyma Nabilla Gunawan(2213025071)</p>
+            <p>Aura Daniarta(2213025049)</p>
+            <p>Bela Novia Saputri(2213025027)</p>
+            <p>Rosdiyanna Safitri(2213025063)</p>
+            <p>Rendy Pahlevi Ramadhani(2213025031)</p>
+            <p>Muhammad Irghi Fahrezi(2213025055)</p>
             </div>
         </div>
+        
 
 </body>
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
   <aside>
-    <p>Copyright © 2024 - All right reserved by baron fc</p>
+    <p>Copyright © 2024 - All right reserved by Kelompok 2</p>
   </aside>
 </footer>
 </html>
