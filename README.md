@@ -51,20 +51,14 @@ Irghi : pemilihan genre
 
 Rendy : search
 
+
+
 Pembagian Tupoksi Coding :
 
-Fauzan & Bela : Homepage 
-
-Fauzan : Halaman setiap genre 
-
-Reyma : menu favorit
-
-Aura : profile buku
-
-Fauzan : Login 
-
-Aura : Sign up
-
-Irghi : pemilihan genre 
-
-Rendy & Ros : search
+Fauzan : Index & Login
+Aura : function & functions, readlist
+Bela : about & detail, readlist index
+Ros : favorite & favorite index, removereadlist
+Rendy : input & output, search
+Reyma :  registrasi & profile, tambah komentar
+Irghi : genre & tambah komentar , unfavorite
