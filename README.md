@@ -52,4 +52,4 @@ Rendy : input, output & search
 
 Reyma :  registrasi, profile & tambah komentar
 
-Irghi : genre, tambah komentar & unfavorite
+Irghi : genre & unfavorite
