@@ -168,7 +168,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
 </body>
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
   <aside>
-    <p>Copyright © 2024 - All right reserved Kelompok 2</p>
+    <p>Copyright © 2024 - All right reserved by Kelompok 2</p>
   </aside>
 </footer>
 </html>

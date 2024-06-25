@@ -217,7 +217,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                             <?php if ($is_in_readlist[$buku['buku_id']]): ?>
                                                 <button type="submit" name="remove_readlist" class="flex  hover:bg-blue-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Hapus dari readlist</div>
+                                                <div class="font-bold text-sm mx-auto">Hapus dari List Bacaan</div>
                                             </div>
                                         </button>
                                             <?php else: ?>
@@ -237,7 +237,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                 <?php if ($is_favorited[$buku['buku_id']]): ?>
                                                     <button type="submit" name="unfavorite" class="flex  hover:bg-red-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                                 <div class="w-full flex-col">
-                                                    <div class="font-bold text-sm mx-auto">Hapus Favorit</div>
+                                                    <div class="font-bold text-sm mx-auto">Hapus dari List Favorit</div>
                                                 </div>
                                             </button>
                                                 <?php else: ?>
@@ -339,7 +339,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                         <?php if ($is_in_readlist[$row['buku_id']]): ?>
                                             <button type="submit" name="remove_readlist" class="flex  hover:bg-blue-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Hapus dari Daftar Bacaan</div>
+                                                <div class="font-bold text-sm mx-auto">Hapus dari List Bacaan</div>
                                             </div>
                                         </button>
                                         <?php else: ?>
@@ -348,7 +348,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                     <img src="img/plussign.png" alt="">
                                                 </div>
                                                 <div class="w-full flex-col">
-                                                    <div class="font-bold text-sm mx-auto">Tambahkan ke Daftar Bacaan</div>
+                                                    <div class="font-bold text-sm mx-auto">Tambahkan ke List Bacaan</div>
                                                 </div>
                                             </button>
                                         <?php endif; ?>
@@ -359,7 +359,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                 <img src="img/plussign.png" alt="">
                                             </div>
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Tambahkan ke Daftar Bacaan</div>
+                                                <div class="font-bold text-sm mx-auto">Tambahkan ke List Bacaan</div>
                                             </div>
                                         </a>
                                 <?php endif; ?>
@@ -371,7 +371,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                         <?php if ($is_favorited[$row['buku_id']]): ?>
                                             <button type="submit" name="unfavorite" class="flex  hover:bg-red-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                                 <div class="w-full flex-col">
-                                                    <div class="font-bold text-sm mx-auto">Hapus Favorit</div>
+                                                    <div class="font-bold text-sm mx-auto">Hapus dari List Favorit</div>
                                                 </div>
                                             </button>
                                         <?php else: ?>
@@ -380,7 +380,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                                 <img src="img/plussign.png" alt="">
                                             </div>
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Tambahkan ke Daftar Favorit</div>
+                                                <div class="font-bold text-sm mx-auto">Tambahkan ke List Favorit</div>
                                             </div>
                                             </button>
                                         <?php endif; ?>
@@ -462,7 +462,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                         <?php if ($is_in_readlist[$row['buku_id']]): ?>
                                             <button type="submit" name="remove_readlist" class="flex  hover:bg-blue-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Hapus dari readlist</div>
+                                                <div class="font-bold text-sm mx-auto">Hapus dari List Bacaan</div>
                                             </div>
                                         </button>
                                         <?php else: ?>
@@ -494,7 +494,7 @@ while ($row = mysqli_fetch_assoc($resultUR)) {
                                         <?php if ($is_favorited[$row['buku_id']]): ?>
                                             <button type="submit" name="unfavorite" class="flex  hover:bg-red-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                                 <div class="w-full flex-col">
-                                                    <div class="font-bold text-sm mx-auto">Hapus Favorit</div>
+                                                    <div class="font-bold text-sm mx-auto">Hapus dari List Favorit</div>
                                                 </div>
                                             </button>
                                         <?php else: ?>

@@ -17,39 +17,27 @@ Muhammad Irghi Fahrezi		( 2213025055)
 Bela Novia Saputri			(2213025027)
 
 Masing - Masing Anggota Mencari Minimal 7 - 10 Buku setiap genre yang sudah ditentukan, 
-Seluruh anggota membuat tampilan dari masing-masing fitur dalam figma
 
 feature :
 
 Homepage 
 
-menu favorit
+Profile User
 
-profile buku
+Add Favorit
+
+Add Readlist
+
+Halaman pergenre
+
+Detail Buku 
 
 Login 
 
 Sign up
 
-pemilihan genre 
-
 search
 
-Pembuatan UI/UX :
-
-Fauzan : Homepage 
-
-Reyma : menu favorit
-
-Aura : profile buku
-
-Bela : Login 
-
-Ros : Sign up
-
-Irghi : pemilihan genre 
-
-Rendy : search
 
 Pembagian Tupoksi Coding :
 

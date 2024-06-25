@@ -62,7 +62,7 @@ if($username){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Daftar buku</title>
+    <title>Profile</title>
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +71,6 @@ if($username){
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="yeah.js"></script>
 </head>
 <body lass="flex font-ibm " data-theme="business">
 
@@ -156,8 +155,8 @@ if($username){
 
         <div class="">
         <div class="flex flex-col px-10">
-            <div class="w-6/12 text-2xl border-l-4 border-yellow-500 px-3">List Bacaan readlist <?php echo $nama?></div>
-            <div class="text-lg text-gray-500">readlist Bacaan <?php echo $nama?></div>
+            <div class="w-6/12 text-2xl border-l-4 border-yellow-500 px-3">List Bacaan Readlist <?php echo $nama?></div>
+            <div class="text-lg text-gray-500">Readlist Bacaan <?php echo $nama?></div>
         </div>
 
 
@@ -202,7 +201,7 @@ if($username){
                                         <input type="hidden" name="buku_id" value="<?php echo $buku['buku_id']; ?>">
                                         <button type="submit" name="remove_readlist" class="flex  hover:bg-blue-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Hapus dari readlist</div>
+                                                <div class="font-bold text-sm mx-auto">Hapus dari List Bacaan</div>
                                             </div>
                                         </button>
                                     </form>
@@ -214,7 +213,7 @@ if($username){
                                         <?php if ($is_favorited[$buku['buku_id']]): ?>
                                             <button type="submit" name="unfavorite" class="flex  hover:bg-red-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                                 <div class="w-full flex-col">
-                                                    <div class="font-bold text-sm mx-auto">Hapus Favorit</div>
+                                                    <div class="font-bold text-sm mx-auto">Hapus dari List Favorit</div>
                                                 </div>
                                             </button>
                                         <?php else: ?>
@@ -289,7 +288,7 @@ if($username){
                                         <?php if ($is_in_readlist[$buku['buku_id']]): ?>
                                             <button type="submit" name="remove_readlist" class="flex  hover:bg-blue-800 p-2 rounded-md w-full mt-2 transition-colors duration-300">
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Hapus dari readlist</div>
+                                                <div class="font-bold text-sm mx-auto">Hapus dari List Bacaan</div>
                                             </div>
                                         </button>
                                         <?php else: ?>
@@ -309,7 +308,7 @@ if($username){
                                         <input type="hidden" name="buku_id" value="<?php echo $buku['buku_id']; ?>">
                                         <button class="flex hover:bg-red-800 p-2 rounded-md w-full mt-2 transition-colors duration-300" type="submit" name="unfavorite">
                                             <div class="w-full flex-col">
-                                                <div class="font-bold text-sm mx-auto">Hapus Favorit</div>
+                                                <div class="font-bold text-sm mx-auto">Hapus dari List Favorit</div>
                                             </div>
                                         </button>
                                     </form>

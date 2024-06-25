@@ -41,7 +41,7 @@ if($username){
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>About Page</title>
+    <title>About Us</title>
 </head>
 
 <body class=" font-ibm " data-theme="business">
