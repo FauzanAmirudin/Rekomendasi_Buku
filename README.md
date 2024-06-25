@@ -38,13 +38,18 @@ Sign up
 
 search
 
-
 Pembagian Tupoksi Coding :
 
 Fauzan : index & login
+
 Aura : function, functions & readlist
+
 Bela : about, detail & readlist index
+
 Ros : favorite, favorite index & removereadlist
+
 Rendy : input, output & search
+
 Reyma :  registrasi, profile & tambah komentar
+
 Irghi : genre, tambah komentar & unfavorite
